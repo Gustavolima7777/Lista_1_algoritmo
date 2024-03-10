@@ -1,32 +1,19 @@
-# Prerequisites
-*.d
+#include <iostream>
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+int main() {
+  int dinheiro_gasto, anos;
+  float preco;
 
-# Precompiled Headers
-*.gch
-*.pch
+  std::cout << "Digite o preço por ano!\n";
+  std::cin >> preco;
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+  std::cout << "Digite a quantidade de anos!\n";
+  std::cin >> anos;
 
-# Fortran module files
-*.mod
-*.smod
+  // Calcula o dinheiro gasto multiplicando o preço pelos anos
+  dinheiro_gasto = preco * anos; 
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
+  std::cout << "Seu dinheiro gasto é: " << dinheiro_gasto << std::endl;
 
-# Executables
-*.exe
-*.out
-*.app
+  return 0;
+}
